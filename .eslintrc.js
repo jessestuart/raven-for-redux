@@ -1,7 +1,5 @@
-{
+module.exports = {
     "extends": [
-        "hss",
-        "hss/es6",
         "prettier"
     ],
     "plugins": [
@@ -13,7 +11,7 @@
     },
     "parserOptions": {
         "ecmaVersion": 8,
-        "sourceType": "script"
+        "sourceType": "module"
     },
     "env": {
         "jest": true,

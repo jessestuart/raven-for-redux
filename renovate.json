@@ -1,0 +1,10 @@
+{
+  "extends": [":base"],
+  "gitAuthor": "ednbot",
+  "labels": ["renovate"],
+  "prHourlyLimit": 0,
+  "automerge": true,
+  "major": {
+    "automerge": false
+  }
+}

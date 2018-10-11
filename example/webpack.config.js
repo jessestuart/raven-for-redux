@@ -1,25 +1,25 @@
-const path = require("path");
+const path = require('path')
 module.exports = {
   devServer: {
-    contentBase: __dirname
+    contentBase: __dirname,
   },
-  entry: path.join(__dirname, "index.js"),
+  entry: path.join(__dirname, 'index.js'),
   output: {
-    filename: "build.js",
-    path: __dirname
+    filename: 'build.js',
+    path: __dirname,
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["env"]
-          }
-        }
-      }
-    ]
-  }
-};
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
+      },
+    ],
+  },
+}

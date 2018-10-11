@@ -1,2 +1,3 @@
-built/
 coverage/
+dist/
+example/build.js
